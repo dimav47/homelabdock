@@ -6,6 +6,7 @@ EXPOSE 80
 RUN apt install maven -y
 RUN cd /home
 RUN mkdir build
+RUN apt install git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN cd /home/build/boxfuse-sample-java-war-hello/
 RUN mvn package
