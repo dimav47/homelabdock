@@ -8,7 +8,7 @@ RUN cd /home
 RUN mkdir build
 RUN apt install git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
-RUN chmod g+h /home/build/boxfuse-sample-java-war-hello
+RUN chmod g+x /home/build/boxfuse-sample-java-war-hello
 RUN cd /home/build/boxfuse-sample-java-war-hello
 RUN mvn package
 RUN cd /home/build/boxfuse-sample-java-war-hello/target
