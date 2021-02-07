@@ -6,7 +6,7 @@ EXPOSE 80
 RUN apt install maven -y
 RUN apt install git -y
 RUN cd
-RUN mkdir /home/build
+RUN mkdir home/build
 RUN cd /home
 RUN ls -la
 RUN cd /home/build/
