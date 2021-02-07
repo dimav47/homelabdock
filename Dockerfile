@@ -1,5 +1,6 @@
 FROM tomcat
-WORKDIR /home
+RUN pwd
+RUN ls -la
 RUN apt install default-jdk -y
 WORKDIR /home/build
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
