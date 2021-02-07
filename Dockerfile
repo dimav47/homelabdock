@@ -1,4 +1,6 @@
-FROM gchauhaan123/tomcat-maven-git-java
+FROM tomcat
+RUN apt update
+RUN apt install maven -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /usr/local/tomcat/boxfuse-sample-java-war-hello
 RUN mvn package
