@@ -8,7 +8,7 @@ RUN apt install git -y
 RUN cd
 RUN mkdir home/build/
 RUN cd /home
-RUN ls -la
+RUN ll
 RUN cd /home/build/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN pwd
