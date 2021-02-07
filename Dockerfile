@@ -1,5 +1,5 @@
 FROM tomcat
-WORKDIR 
+WORKDIR /home
 RUN pwd
 RUN ls -la
 RUN apt install default-jdk -y
