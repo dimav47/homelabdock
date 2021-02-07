@@ -12,7 +12,7 @@ RUN ls -la
 RUN cd /home/build/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN pwd
-RUN chmod 777 /build/boxfuse-sample-java-war-hello
+RUN chmod 777 /boxfuse-sample-java-war-hello
 RUN ls -la
 RUN mvn package
 RUN cd /home/build/boxfuse-sample-java-war-hello/target
