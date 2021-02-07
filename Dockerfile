@@ -1,4 +1,6 @@
 FROM tomcat
+RUN pwd
+RUN ls -la
 WORKDIR /.
 RUN apt update
 RUN apt install maven -y
