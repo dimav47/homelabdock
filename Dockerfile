@@ -1,6 +1,5 @@
 FROM tomcat
 WORKDIR /home
-RUN apt install default-jdk -y
 RUN apt install maven -y
 RUN apt install git -y
 WORKDIR /home/build
