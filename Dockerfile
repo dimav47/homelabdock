@@ -1,6 +1,6 @@
 FROM tomcat
 WORKDIR /home
-RUN apt install default-jdk maven git -y
+RUN apt install default-jdk -y
 WORKDIR /home/build
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /home/build/boxfuse-sample-java-war-hello
