@@ -4,12 +4,11 @@ RUN apt install default-jdk -y
 RUN apt install tomcat9 -y
 EXPOSE 80
 RUN apt install maven -y
-RUN cd /home
-RUN pwd
-RUN mkdir build
-RUN pwd
 RUN apt install git -y
+RUN cd
+RUN mkdir /home/build
 RUN pwd
+RUN ls -la
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN pwd
 RUN mvn package
