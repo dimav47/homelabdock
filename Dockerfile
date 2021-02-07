@@ -10,8 +10,7 @@ RUN mkdir build
 WORKDIR /home/build
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN pwd
-WORKDIR /home/build/boxfuse
-RUN chmod 777 /boxfuse-sample-java-war-hello
+WORKDIR /home/build/boxfuse-sample-java-war-hello
 RUN ls -la
 RUN mvn package
 WORKDIR /home/build/boxfuse-sample-java-war-hello/target
