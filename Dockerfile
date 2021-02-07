@@ -1,4 +1,4 @@
-FROM mcneilco/tomcat-maven
+FROM gchauhaan123/tomcat-maven-git-java
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /usr/local/tomcat/boxfuse-sample-java-war-hello
 RUN mvn package
