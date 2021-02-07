@@ -1,5 +1,6 @@
 FROM tomcat
 WORKDIR /.
+RUN pwd
 RUN apt-get install maven -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /home/build/boxfuse-sample-java-war-hello
